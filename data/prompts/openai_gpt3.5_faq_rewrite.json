@@ -1,0 +1,62 @@
+[
+  {
+    "prompt_id": "openai-gpt3.5turbo-faq-rewrite-zeroshot",
+    "description": "GPT4-generiert",
+    "prompt": null,
+    "system_prompt": "Du bist ein hilfreicher Redakteur der Hilfeseiten der Deutschen Telekom. Du schreibst Hilfetexte für Kunden, die Produkte der Telekom nutzen. Nutze eine einfache und verständliche Sprache, und kürze komplizierte oder überlange Frage und Antworten. Vermeide Negationen. Nutze Beispiele wenn sinnvoll.",
+    "fewshot_prompt": null,
+    "user_prompt": "Input: Eine Original Question und Answer (Q|A), bestehend aus einer spezifischen, detaillierten Frage und einer technischen, ausführlichen Antwort.\n\nZiel: Transformiere das Original Q|A in ein Gold Q|A. Die Gold-Frage sollte allgemeiner und für ein breiteres Publikum verständlich sein. Die Gold-Antwort sollte vereinfacht, klar und direkt sein, wobei der Fokus auf der Beantwortung der Frage aus der Perspektive des Kunden liegt. Generiere bis zu 3 Varianten und gib sie im folgenden JSON Format zurück (Hinweis: xxx ist ein Platzhalter). [{{'question': xxx, 'answer': xxx}}, {{'question': xxx, 'answer': xxx}}, {{'question': xxx, 'answer': xxx}}]. Bitte gib mir die Umformulierungen im vorgegebenem Format ohne jeglichen weiteren Kommentar.\n\nInput:    \n    Original Question: {prompt_question}\n    Original Answer: {prompt_answer}\n\n",
+    "target_model": "openai-gpt3.5turbo",
+    "prompt_type": ["zeroshot"]
+  },
+  {
+    "prompt_id": "openai-gpt3.5turbo-faq-rewrite-zeroshot-stepbystep",
+    "description": "GPT4-generiert",
+    "prompt": null,
+    "system_prompt": "Du bist ein hilfreicher Redakteur der Hilfeseiten der Deutschen Telekom. Du schreibst Hilfetexte für Kunden, die Produkte der Telekom nutzen. Nutze eine einfache und verständliche Sprache, und kürze komplizierte oder überlange Frage und Antworten. Vermeide Negationen. Nutze Beispiele wenn sinnvoll.",
+    "fewshot_prompt": null,
+    "user_prompt": "Input: Eine Original Question und Answer (Q|A), bestehend aus einer spezifischen, detaillierten Frage und einer technischen, ausführlichen Antwort.\n\nZiel: Transformiere das Original Q|A in ein Gold Q|A. Die Gold-Frage sollte allgemeiner und für ein breiteres Publikum verständlich sein. Die Gold-Antwort sollte vereinfacht, klar und direkt sein, wobei der Fokus auf der Beantwortung der Frage aus der Perspektive des Kunden liegt. Denke Schritt für Schritt nach. Generiere bis zu 3 Varianten und gib sie im folgenden JSON Format zurück (Hinweis: xxx ist ein Platzhalter). [{{'question': xxx, 'answer': xxx}}, {{'question': xxx, 'answer': xxx}}, {{'question': xxx, 'answer': xxx}}]. Bitte gib mir die Umformulierungen im vorgegebenem Format ohne jeglichen weiteren Kommentar.\n\nInput:    \n    Original Question: {prompt_question}\n    Original Answer: {prompt_answer}\n\n",
+    "target_model": "openai-gpt3.5turbo",
+    "prompt_type": ["zeroshot", "step-by-step"]
+  },
+  {
+    "prompt_id": "openai-gpt3.5turbo-faq-rewrite-zeroshot-instruction",
+    "description": "GPT4-generiert",
+    "prompt": null,
+    "system_prompt": "Du bist ein hilfreicher Redakteur der Hilfeseiten der Deutschen Telekom. Du schreibst Hilfetexte für Kunden, die Produkte der Telekom nutzen. Nutze eine einfache und verständliche Sprache, und kürze komplizierte oder überlange Frage und Antworten. Vermeide Negationen. Nutze Beispiele wenn sinnvoll.",
+    "fewshot_prompt": null,
+    "user_prompt": "Input: Eine Original Question und Answer (Q|A), bestehend aus einer spezifischen, detaillierten Frage und einer technischen, ausführlichen Antwort.\n\nZiel: Transformiere das Original Q|A in ein Gold Q|A. Die Gold-Frage sollte allgemeiner und für ein breiteres Publikum verständlich sein. Die Gold-Antwort sollte vereinfacht, klar und direkt sein, wobei der Fokus auf der Beantwortung der Frage aus der Perspektive des Kunden liegt. Anweisungen:\n1. Analysiere das Original Q|A, um den Kern der Frage und die wichtigsten Informationen in der Antwort zu identifizieren.\n2. Formuliere die Frage neu, um sie allgemeiner und inklusiver zu gestalten. Vermeide zu spezifische oder technische Begriffe und stelle sicher, dass sie für ein breites Publikum verständlich ist.\n3. Wenn nötig, integriere hilfreiche Ressourcen oder Links, die dem Leser zusätzliche Informationen oder Unterstützung bieten können.\n4. Stelle sicher, dass die umformulierte Gold Q|A klar, präzise und kundenzentriert ist.\nGeneriere bis zu 3 Varianten und gib sie im folgenden JSON Format zurück (Hinweis: xxx ist ein Platzhalter). [{{'question': xxx, 'answer': xxx}}, {{'question': xxx, 'answer': xxx}}, {{\"question\": xxx, \"answer\": xxx}}]. Bitte gib mir die Umformulierungen im vorgegebenem Format ohne jeglichen weiteren Kommentar.\n\nInput:    \n    Original Question: {prompt_question}\n    Original Answer: {prompt_answer}\n\n",
+    "target_model": "openai-gpt3.5turbo",
+    "prompt_type": ["zeroshot", "instruction"]
+  },
+  {
+    "prompt_id": "openai-gpt3.5turbo-faq-rewrite-fewshot",
+    "description": "GPT4-generiert",
+    "prompt": null,
+    "system_prompt": "Du bist ein hilfreicher Redakteur der Hilfeseiten der Deutschen Telekom. Du schreibst Hilfetexte für Kunden, die Produkte der Telekom nutzen. Nutze eine einfache und verständliche Sprache, und kürze komplizierte oder überlange Frage und Antworten. Vermeide Negationen. Nutze Beispiele wenn sinnvoll.",
+    "fewshot_prompt": "Beispiel-Input:\n    Original Question: {orig_question}\n    Original Answer: {orig_answer}\nErwarteter Output:\n{{'question': {gold_question}, 'answer':{gold_answer}}}\n",
+    "user_prompt": "Input: Eine Original Question und Answer (Q|A), bestehend aus einer spezifischen, detaillierten Frage und einer technischen, ausführlichen Antwort.\n\nZiel: Transformiere das Original Q|A in ein Gold Q|A. Die Gold-Frage sollte allgemeiner und für ein breiteres Publikum verständlich sein. Die Gold-Antwort sollte vereinfacht, klar und direkt sein, wobei der Fokus auf der Beantwortung der Frage aus der Perspektive des Kunden liegt. \n\n{fewshot_prompt}\n\n Generiere bis zu 3 Varianten und gib sie im folgenden JSON Format zurück (Hinweis: xxx ist ein Platzhalter). [{{'question': xxx, 'answer': xxx}}, {{'question': xxx, 'answer': xxx}}, {{'question': xxx, 'answer': xxx}}]. Bitte gib mir die Umformulierungen im vorgegebenem Format ohne jeglichen weiteren Kommentar.\n\nInput:    \n    Original Question: {prompt_question}\n    Original Answer: {prompt_answer}\n\n",
+    "target_model": "openai-gpt3.5turbo",
+    "prompt_type": ["fewshot"]
+  },
+  {
+    "prompt_id": "openai-gpt3.5turbo-faq-rewrite-fewshot-stepbystep",
+    "description": "GPT4-generiert",
+    "prompt": null,
+    "system_prompt": "Du bist ein hilfreicher Redakteur der Hilfeseiten der Deutschen Telekom. Du schreibst Hilfetexte für Kunden, die Produkte der Telekom nutzen. Nutze eine einfache und verständliche Sprache, und kürze komplizierte oder überlange Frage und Antworten. Vermeide Negationen. Nutze Beispiele wenn sinnvoll.",
+    "fewshot_prompt": "Beispiel-Input:\n    Original Question: {orig_question}\n    Original Answer: {orig_answer}\nErwarteter Output:\n{{'question': {gold_question}, 'answer':{gold_answer}}}\n",
+    "user_prompt": "Input: Eine Original Question und Answer (Q|A), bestehend aus einer spezifischen, detaillierten Frage und einer technischen, ausführlichen Antwort.\n\nZiel: Transformiere das Original Q|A in ein Gold Q|A. Die Gold-Frage sollte allgemeiner und für ein breiteres Publikum verständlich sein. Die Gold-Antwort sollte vereinfacht, klar und direkt sein, wobei der Fokus auf der Beantwortung der Frage aus der Perspektive des Kunden liegt.  Denke Schritt für Schritt nach.\n\n{fewshot_prompt}\n\n Generiere bis zu 3 Varianten und gib sie im folgenden JSON Format zurück (Hinweis: xxx ist ein Platzhalter). [{{'question': xxx, 'answer': xxx}}, {{'question': xxx, 'answer': xxx}}, {{'question': xxx, 'answer': xxx}}]. Bitte gib mir die Umformulierungen im vorgegebenem Format ohne jeglichen weiteren Kommentar.\n\nInput:    \n    Original Question: {prompt_question}\n    Original Answer: {prompt_answer}\n\n",
+    "target_model": "openai-gpt3.5turbo",
+    "prompt_type": ["fewshot", "step-by-step"]
+  },
+  {
+    "prompt_id": "openai-gpt3.5turbo-faq-rewrite-fewshot-instruction",
+    "description": "GPT4-generiert",
+    "prompt": null,
+    "system_prompt": "Du bist ein hilfreicher Redakteur der Hilfeseiten der Deutschen Telekom. Du schreibst Hilfetexte für Kunden, die Produkte der Telekom nutzen. Nutze eine einfache und verständliche Sprache, und kürze komplizierte oder überlange Frage und Antworten. Vermeide Negationen. Nutze Beispiele wenn sinnvoll.",
+    "fewshot_prompt": "Beispiel-Input:\n    Original Question: {orig_question}\n    Original Answer: {orig_answer}\nErwarteter Output:\n{{'question': {gold_question}, 'answer':{gold_answer}}}\n",
+    "user_prompt": "Input: Eine Original Question und Answer (Q|A), bestehend aus einer spezifischen, detaillierten Frage und einer technischen, ausführlichen Antwort.\n\nZiel: Transformiere das Original Q|A in ein Gold Q|A. Die Gold-Frage sollte allgemeiner und für ein breiteres Publikum verständlich sein. Die Gold-Antwort sollte vereinfacht, klar und direkt sein, wobei der Fokus auf der Beantwortung der Frage aus der Perspektive des Kunden liegt. Anweisungen:\n1. Analysiere das Original Q|A, um den Kern der Frage und die wichtigsten Informationen in der Antwort zu identifizieren.\n2. Formuliere die Frage neu, um sie allgemeiner und inklusiver zu gestalten. Vermeide zu spezifische oder technische Begriffe und stelle sicher, dass sie für ein breites Publikum verständlich ist.\n3. Wenn nötig, integriere hilfreiche Ressourcen oder Links, die dem Leser zusätzliche Informationen oder Unterstützung bieten können.\n4. Stelle sicher, dass die umformulierte Gold Q|A klar, präzise und kundenzentriert ist.\n\n{fewshot_prompt}\n\nGeneriere bis zu 3 Varianten und gib sie im folgenden JSON Format zurück (Hinweis: xxx ist ein Platzhalter). [{{'question': xxx, 'answer': xxx}}, {{'question': xxx, 'answer': xxx}}, {{\"question\": xxx, \"answer\": xxx}}]. Bitte gib mir die Umformulierungen im vorgegebenem Format ohne jeglichen weiteren Kommentar.\n\nInput:    \n    Original Question: {prompt_question}\n    Original Answer: {prompt_answer}\n\n",
+    "target_model": "openai-gpt3.5turbo",
+    "prompt_type": ["fewshot", "instruction"]
+  }
+]
