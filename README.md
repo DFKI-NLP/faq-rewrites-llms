@@ -13,7 +13,7 @@ For detailed results, please see our paper accpted at INLG 20204, Tokyo, Japan.
 
 The data is provided in json format. 
 
-The folder [data](data/faq-data) contains raw FAQ drafts (input field), revisions by professional editors (reference field), and up to 3 LLM-generated revisions for each input (predictions field). The json also contains scores for each prediction (BERTScore, Rouge and GPT-Scores wrt. hallucination, informativeness and coherence. At the end of the files there are also overall average scores for each metric.
+The folder [data](data/faq-data) contains raw FAQ drafts (input field), revisions by professional editors (reference field), and up to 3 LLM-generated revisions for each input (predictions field). The json also contains scores for each prediction (BERTScore, Rouge and ChatGPT-4 Scores wrt. hallucination, informativeness and coherence. At the end of the files there are also overall average scores for each metric.
 
 The folder [prompts](data/prompts) contains an overview of the prompts.
 
