@@ -7,15 +7,15 @@ The input data was provided by Deutsche Telekom AG (DT), a large German telecomm
 On this dataset, we evaluate the performance of four large language models (LLM) through diverse prompts tailored for the rewriting task. We conduct automatic evaluations of content and text quality using ROUGE, BERTScore, and ChatGPT.
 Furthermore, we let professional editors assess the helpfulness of automatically generated FAQ revisions for editorial enhancement. Our findings indicate that LLMs can produce FAQ reformulations beneficial to the editorial process. We observe minimal performance discrepancies among LLMs for this task, and our survey on helpfulness underscores the subjective nature of editors' perspectives on editorial refinement.
 
-For detailed results, please see our paper accpted at [INLG 20204, Tokyo, Japan](https://inlg2024.github.io/) (see also [Citation](#-citation)).
+For detailed results, please see our paper accepted at [INLG 20204, Tokyo, Japan](https://inlg2024.github.io/) (see also [Citation](#-citation)).
 
 ## 📝 &nbsp; Data format
 
 The data is provided in json format. 
 
-The folder [data](data/faq-data) contains raw FAQ drafts (input field), revisions by professional editors (reference field), and up to 3 LLM-generated revisions for each input (predictions field). The json also contains scores for each prediction (BERTScore, Rouge and ChatGPT-4 Scores wrt. hallucination, informativeness and coherence. At the end of the files there are also overall average scores for each metric.
+The folder [data/faq-data](data/faq-data) contains raw FAQ drafts (input field), revisions by professional editors (reference field), and up to 3 LLM-generated revisions for each input (predictions field). The json also contains scores for each prediction (BERTScore, Rouge and ChatGPT-4 Scores wrt. hallucination, informativeness and coherence. At the end of the files there are also overall average scores for each metric.
 
-The folder [prompts](data/prompts) contains an overview of the prompts.
+The folder [data/prompts](data/prompts) contains an overview of the prompts.
 
 
 ## 📚&nbsp; Citation
