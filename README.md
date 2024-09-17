@@ -32,7 +32,7 @@ If you use the dataset, please cite the following paper:
 ```
 
 ## 📘&nbsp; License
-The data is released under the under terms of the [CC-BY-SA-4.0](LICENCE.txt).
+The data is released under the terms of the [CC-BY-SA-4.0](LICENCE.txt).
 
 
 
