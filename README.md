@@ -1,6 +1,6 @@
 # Enhancing Editorial Tasks: A Case Study on Rewriting Customer Help Page Contents Using Large Language Models
 
-We introduce a German-language dataset comprising Frequently Asked Question-Answer pairs: raw FAQ drafts, their revisions by professional editors and LLM generated revisions.
+We introduce a German-language dataset comprising Frequently Asked Question-Answer pairs: raw FAQ drafts, their revisions by professional editors and LLM generated revisions. The data was used to investigate the use of large language models (LLMs) to enhance the editorial process of rewriting customer help pages. 
 
 The input data was provided by Deutsche Telekom AG (DT), a large German telecommunications company. The corpus comprises 56 question-answer pairs addressing potential customer inquiries across various topics, including additional SIM cards, Netflix subscriptions, relocation, changing mobile service providers, house connection orders, hardware order and delivery status, and fixed-line internet and TV setup. For each FAQ pair, a raw input is provided by specialized departments, and a rewritten gold output is crafted by a professional editor of DT. The final dataset also includes LLM generated FAQ-pairs.
 
