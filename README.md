@@ -34,6 +34,8 @@ Each `instance` contains the following fields:
 
 Note that the reference URLs may have changed, or do not contain the exact same content that we used for this dataset, as they are continuously being updated to reflect new information.
 
+### Prompt structure and templates
+
 The folder [data/prompts](data/prompts) contains an overview of the prompts.
 
 
