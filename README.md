@@ -24,6 +24,7 @@ The folder [data/faq-data](data/faq-data) contains raw FAQ drafts (input field),
 - `user_prompts`: the list of user prompts, one per instance.
 - `requests`: a list of LLM request parameters, one per instance.
 - `responses`: the list of raw LLM responses plus metadata, one per instance.
+- `evaluation_overall`: a list of used metrics along with the mean of the score values across all LLM-generated revisions contained in the json file.
 
 Each `instance` contains the following fields:
 - `instance_id`: instance identifier, a `string` feature.
