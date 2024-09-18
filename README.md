@@ -44,12 +44,13 @@ The folder [data/prompts](data/prompts) contains an overview of the prompts.
 
 If you use the dataset, please cite the following paper:
 ```
-@inproceedings{bleick-etal-2024-german-voter,
-    title = "{G}erman Voter Personas Can Radicalize {LLM} Chatbots via the Echo Chamber Effect",
-    author = {Bleick, Maximilian  and
-      Feldhus, Nils  and
-      Burchardt, Aljoscha  and
-      M{\"o}ller, Sebastian},
+@inproceedings{gabryszak-etal-2024-enhancing-editorial,
+    title = "Enhancing Editorial Tasks: A Case Study on Rewriting Customer Help Page Contents Using Large Language Models",
+    author = {Gabryszak, Aleksandra  and
+      R{\"o}der, Daniel  and
+      Binder, Arne  and
+      Sion, Luca  and
+      Hennig, Leonhard},
     editor = "Mahamood, Saad  and
       Minh, Nguyen Le  and
       Ippolito, Daphne",
@@ -58,10 +59,11 @@ If you use the dataset, please cite the following paper:
     year = "2024",
     address = "Tokyo, Japan",
     publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/2024.inlg-main.13",
-    pages = "153--164",
-    abstract = {We investigate the impact of LLMs on political discourse with a particular focus on the influence of generated personas on model responses. We find an echo chamber effect from LLM chatbots when provided with German-language biographical information of politicians and voters in German politics, leading to sycophantic responses and the reinforcement of existing political biases. Findings reveal that personas of certain political party, such as those of the {`}Alternative f{\"u}r Deutschland{'} party, exert a stronger influence on LLMs, potentially amplifying extremist views. Unlike prior studies, we cannot corroborate a tendency for larger models to exert stronger sycophantic behaviour. We propose that further development should aim at reducing sycophantic behaviour in LLMs across all sizes and diversifying language capabilities in LLMs to enhance inclusivity.},
+    url = "https://aclanthology.org/2024.inlg-main.33",
+    pages = "402--411",
+    abstract = "In this paper, we investigate the use of large language models (LLMs) to enhance the editorial process of rewriting customer help pages. We introduce a German-language dataset comprising Frequently Asked Question-Answer pairs, presenting both raw drafts and their revisions by professional editors. On this dataset, we evaluate the performance of four large language models (LLM) through diverse prompts tailored for the rewriting task. We conduct automatic evaluations of content and text quality using ROUGE, BERTScore, and ChatGPT. Furthermore, we let professional editors assess the helpfulness of automatically generated FAQ revisions for editorial enhancement. Our findings indicate that LLMs can produce FAQ reformulations beneficial to the editorial process. We observe minimal performance discrepancies among LLMs for this task, and our survey on helpfulness underscores the subjective nature of editors{'} perspectives on editorial refinement.",
 }
+
 ```
 
 ## 📘&nbsp; License
