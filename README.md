@@ -20,7 +20,7 @@ The folder [data/faq-data](data/faq-data) contains raw FAQ drafts (input field),
 - `prompt_id`: a `string` feature specifying the LLM, prompt, and task type.
 - `description`: a `string` feature.
 - `prompt_type`: a `string` feature.
-- `system_prompts`: a `string` feature giving the generic system prompt.
+- `system_prompts`: a `string` feature listing the generic system prompt.
 - `user_prompts`: the list of user prompts, one per instance.
 - `requests`: a list of request parameters, one per instance.
 - `responses`: the list of raw response information, one per instance.
