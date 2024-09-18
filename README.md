@@ -43,12 +43,23 @@ The folder [data/prompts](data/prompts) contains an overview of the prompts.
 
 If you use the dataset, please cite the following paper:
 ```
-@inproceedings{pub15191,
-    author = {Gabryszak, Aleksandra and Röder, Daniel and Binder, Arne Björn and Sion, Luca and Hennig, Leonhard},
-    title = {Enhancing Editorial Tasks: A Case Study on Rewriting Customer Help Page Contents Using Large Language Models},
-    booktitle = {Proceedings of the 17th International Natural Language Generation Conference. International Natural Language Generation Conference (INLG-2024), Tokyo, Japan},
-    year = {2024},
-    publisher = {Association for Computational Linguistics}
+@inproceedings{bleick-etal-2024-german-voter,
+    title = "{G}erman Voter Personas Can Radicalize {LLM} Chatbots via the Echo Chamber Effect",
+    author = {Bleick, Maximilian  and
+      Feldhus, Nils  and
+      Burchardt, Aljoscha  and
+      M{\"o}ller, Sebastian},
+    editor = "Mahamood, Saad  and
+      Minh, Nguyen Le  and
+      Ippolito, Daphne",
+    booktitle = "Proceedings of the 17th International Natural Language Generation Conference",
+    month = sep,
+    year = "2024",
+    address = "Tokyo, Japan",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.inlg-main.13",
+    pages = "153--164",
+    abstract = {We investigate the impact of LLMs on political discourse with a particular focus on the influence of generated personas on model responses. We find an echo chamber effect from LLM chatbots when provided with German-language biographical information of politicians and voters in German politics, leading to sycophantic responses and the reinforcement of existing political biases. Findings reveal that personas of certain political party, such as those of the {`}Alternative f{\"u}r Deutschland{'} party, exert a stronger influence on LLMs, potentially amplifying extremist views. Unlike prior studies, we cannot corroborate a tendency for larger models to exert stronger sycophantic behaviour. We propose that further development should aim at reducing sycophantic behaviour in LLMs across all sizes and diversifying language capabilities in LLMs to enhance inclusivity.},
 }
 ```
 
