@@ -15,6 +15,23 @@ The data is provided in json format.
 
 The folder [data/faq-data](data/faq-data) contains raw FAQ drafts (input field), revisions by professional editors (reference field), and up to 3 LLM-generated revisions for each input (predictions field). The json also contains scores for each prediction (BERTScore, Rouge and ChatGPT-4 Scores wrt. hallucination, informativeness and coherence. At the end of the files there are also overall average scores for each metric.
 
+### Data fields
+- `instances`: list of evaluated instances
+- `prompt_id`: a `string` feature specifying the LLM, prompt, and task type
+- `description`: a `string` feature
+- `prompt_type`: a `string` feature,
+- `system_prompts`: a `string` feature giving the generic system prompt
+- `user_prompts`: the list of user prompts, one per instance
+- `requests`: a list of request parameters, one per instance
+- `responses`: the list of raw response information, one per instance
+
+Each `instance` contains the following fields:
+- `instance_id`: instance identifier, a `string` feature.
+- `input`: the draft / input texts of an FAQ entry, consisting of a reference `url` field (a `string` feature), a `question` (`string` feature) and an `answer` (`string` feature)
+- `predictions`: a list of up to 3 predictions (generated rewrites) of the input for this LLM. Each prediction consists of an `idx` (`int` feature) field, plus a generated `question` (`string` feature) and `answer` (`string` feature). Each prediction also contains a list of `evaluation` scores (content overlap metrics like `ROUGE`, and GPT4-based evaluations such as `hallucinations`). 
+- `reference`: the human-written reference FAQ, consisting of a `question` (`string` feature) and `answer` (`string` feature), and a `url` (`string` feature) reference
+- `use_case`: a `string` feature describing the general topic of the FAQ instance
+
 The folder [data/prompts](data/prompts) contains an overview of the prompts.
 
 
