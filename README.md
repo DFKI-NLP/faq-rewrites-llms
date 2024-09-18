@@ -32,6 +32,8 @@ Each `instance` contains the following fields:
 - `reference`: the human-written reference FAQ, consisting of a `question` (`string` feature) and `answer` (`string` feature), and a `url` (`string` feature) reference.
 - `use_case`: a `string` feature describing the general topic of the FAQ instance.
 
+Note that the reference URLs may have changed, or do not contain the exact same content that we used for this dataset, as they are continuously being updated to reflect new information.
+
 The folder [data/prompts](data/prompts) contains an overview of the prompts.
 
 
